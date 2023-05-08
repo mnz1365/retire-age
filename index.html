@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>37</p>
+    <p id="p1"></p>
+
+    <script>
+        var age = 37;
+        var retire_age = 0;
+        var retire_year = 0;
+        var remain = 0;
+        var work_time = 17;
+        var this_year = new Date();
+        this_year = this_year.getFullYear();
+
+        remain = 30 - 17;
+        retire_age = age + remain;
+        retire_year = this_year + remain;
+
+        document.getElementById("p1").innerHTML = "i'm " + age + " and remain " +  remain + " i retire in " + retire_year;
+
+
+    </script>
+</body>
+</html>
